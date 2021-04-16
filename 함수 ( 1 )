@@ -1,0 +1,19 @@
+public class Animal {
+
+    //Animal이란 class 만들어서 dog 만들기
+    //Animal 클래스 구성 요소 (name, age, 함수(run)-> 이름 출력하고 “힘들다” 반환
+
+        String name;
+        int age;
+
+        String run(){
+            System.out.println(name);
+            return "힘들다";
+        }
+
+        public static void main(String[] args) {
+            Animal dog =new Animal();
+            dog.name="멍멍이";
+            System.out.println(dog.run());
+        }
+}
