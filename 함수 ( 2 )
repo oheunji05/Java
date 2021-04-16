@@ -1,0 +1,21 @@
+public class Animal {
+
+    //Dog -> 속성(name,color), 기능(bark)
+    //bark() -> "name이 짖습니다" 출력 후 1반환
+    //메인에서 Dog 객체 생성 후 이름 색 정해주고 bark()실행하기
+
+    String name;
+    String color;
+
+    int bark(){
+        System.out.println(name+"가 짖습니다");
+        return 1;
+    }
+
+    public static void main(String[] args) {
+        Animal dog=new Animal();
+        dog.name="멍멍이";
+        dog.color="검정";
+        System.out.println(dog.bark());
+    }
+}
