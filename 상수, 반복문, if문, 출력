@@ -1,0 +1,13 @@
+public class java1 {
+
+    //a 상수로 선언 a가 10보다 크면 반복문으로 1부터 a까지 출력
+    public static void main(String[] args) {
+        final int a=16;
+        if (a>10){
+            for (int i=1;i<=a;i++){
+                System.out.println(i);
+           }
+        }
+    }
+
+}
