@@ -1,0 +1,24 @@
+public class java5 {
+
+    //class 이름 아무거나 생성 클래스 변수 a 만들기
+    //add함수 만들기
+    //add()-> 숫자 하나 들어올 경우 a+숫자 반환
+    //숫자 네개 들어올 경우 네개 다 더해서 반환
+
+    static int a;
+
+    int add (int b){
+        return a+b;
+    }
+    int add (int a,int b,int c,int d){
+        return a+b+c+d;
+    }
+
+    public static void main(String[] args) {
+
+        java5 a=new java5();
+        a.a=5;
+        System.out.println(a.add(1));
+        System.out.println(a.add(1,2,2,3));
+    }
+}
