@@ -1,0 +1,11 @@
+public class java4 {
+
+    public static void main(String[] args) {
+
+        int[] a={1,2,3,4};
+        int[] b=new int[10];
+        System.out.println(a.length);
+        System.out.println(a[1]);//배열 1번 째 값
+
+    }
+}
