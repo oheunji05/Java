@@ -1,0 +1,32 @@
+public class Human {
+    //Human Class 만들기-> name이랑 age 만들기
+    //->생성자 네개(하나씩 들어왔을 때, 두개 다 들어왔을 때, 안 들어왔을 때)
+    //-> 생성자에서 인스턴스 변수 초기화 해주고 들어온 값 출력하기
+
+    String name;
+    int age;
+
+    Human (String name){
+        this.name=name;
+        System.out.println(name);
+    }
+    Human (int age){
+        this.age=age;
+        System.out.println(age);
+    }
+    Human (String name,int age){
+        this.name=name;
+        this.age=age;
+        System.out.println(name+age);
+    }
+    Human (){
+        System.out.println("객체가 생성되었습니다.");
+    }
+
+    public static void main(String[] args) {
+        Human a=new Human("mike");
+        Human b=new Human(13);
+        Human c=new Human("mike",13);
+        Human d=new Human();
+    }
+}
