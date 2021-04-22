@@ -1,0 +1,31 @@
+public class Animal1 {
+
+    String name;
+    int legs;
+    int age;
+
+    void move(){
+        System.out.println(legs+"개의 다리를 움직입니다");
+    }
+    void eat(){
+        System.out.println(name+"이 밥을 먹습니다");
+    }
+
+}
+
+---------------------------------------------------
+
+public class Cat extends Animal1{
+
+    String catTower;
+
+
+    Cat(int age){
+        this.age=age;
+    }
+
+    public static void main(String[] args) {
+        Cat cat = new Cat(3);
+        cat.eat();
+    }
+}
