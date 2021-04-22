@@ -1,0 +1,39 @@
+public class Animal1 {
+
+    String name;
+    int legs;
+    int age;
+
+    void move(){
+        System.out.println(legs+"개의 다리를 움직입니다");
+    }
+    void eat(){
+        System.out.println(name+"이 밥을 먹습니다");
+    }
+
+}
+
+---------------------------------------------------------------
+
+public class Dog extends Animal1{
+
+    String goodNose;
+
+    @Override
+    void eat() {
+        System.out.println("강아지 "+name+"이가 밥을 먹습니다");
+    }
+
+    @Override
+    void move() {
+        System.out.println("강아지"+name+"이"+legs+"개의 다리를 움직입니다");
+    }
+
+    public static void main(String[] args) {
+        Dog dog=new Dog();
+        dog.name="용빈";
+        dog.legs=4;
+        dog.eat();
+        dog.move();
+    }
+}
