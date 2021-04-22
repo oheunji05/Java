@@ -1,0 +1,33 @@
+public class Student {
+    //Student class 만들기(String name), void study(공부를 합니다 출력)
+    //내 이름 class 에서 상속 받기(String subject)
+    //내이름 class에서 study 오버라이드 하기-> (이름이 ~과목 공부를 합니다 출력)
+
+    String name;
+
+    void study(){
+        System.out.println("공부를 합니다");
+    }
+}
+
+-----------------------------------------------------------------------------
+
+public class eunji extends Student{
+    //Student class 만들기(String name), void study(공부를 합니다 출력)
+    //내 이름 class 에서 상속 받기(String subject)
+    //내이름 class에서 study 오버라이드 하기-> (이름이 ~과목 공부를 합니다 출력)
+
+    String subject;
+
+    @Override
+    void study() {
+        System.out.println(name+"이"+subject+"과목 공부를 합니다");
+    }
+
+    public static void main(String[] args) {
+        eunji eunji=new eunji();
+        eunji.name="eunji";
+        eunji.subject="math";
+        eunji.study();
+    }
+}
