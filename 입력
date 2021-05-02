@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class A {
+
+    //세 개의 정수를 입력받아 합과 평균을 출력하는 프로그램을 작성하시오.
+    //(단 평균은 소수 이하를 버림하여 정수 부분만 출력한다.)
+    //sum = 170
+    //avg = 56
+
+    public static void main(String[] args) {
+        int a,b,c,sum,avg;
+
+        Scanner scanner = new Scanner(System.in);
+        a=scanner.nextInt();
+        b=scanner.nextInt();
+        c=scanner.nextInt();
+        sum=a+b+c;
+        avg=sum/3;
+        System.out.println("sum = "+sum);
+        System.out.print("avg = "+avg);
+    }
+}
