@@ -1,0 +1,32 @@
+public class Human1 {
+
+    //Human class -> 이름이랑 나이랑 walk()
+    //walk()-> 이름 이 걷습니다
+    //내 이름 class -> Human 상속 받기, 생성자 써서 이름 나이 넣어주기
+    //메인에서 내이름 클래스 인스턴스 생성 후 walk() 실행,
+
+    String name;
+    int age;
+
+     void walk(){
+        System.out.println(name+"이 걷습니다");
+    }
+
+}
+---------------------------------------------------------------------
+public class oheunji extends Human1{
+
+    //Human class -> 이름이랑 나이랑 walk()
+    //walk()-> 이름 이 걷습니다
+    //내 이름 class -> Human 상속 받기, 생성자 써서 이름 나이 넣어주기
+    //메인에서 내이름 클래스 인스턴스 생성 후 walk() 실행,
+
+   oheunji(String name){
+       this.name=name;
+   }
+    public static void main(String[] args) {
+        oheunji a=new oheunji("오은지");
+        System.out.println("오은지");
+        System.out.println(17);
+    }
+}
