@@ -9,5 +9,43 @@ public class java1 {
            }
         }
     }
+}
 
+-----------------------------------------------------------------------
+public class java2 {
+
+    //상수 num 선언해서 1부터 num까지 짝수만 출력하기
+
+    public static void main(String[] args) {
+        final int num=15;
+        for(int i=1;i<=num;i++){
+            if (i%2==0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+------------------------------------------------------------------------
+public class java3 {
+
+    //상수 num 선언해서 짝수면 1부터 num까지 짝수만 홀수면 1부터 홀수만 출력하기
+
+    public static void main(String[] args) {
+        final int num=16;
+        if (num%2==0){
+            for (int i=1;i<=num;i++){
+                if (i%2==0){
+                    System.out.println(i);
+                }
+            }
+        }
+        else {
+            for (int i = 1; i <= num; i++) {
+                if (i % 2 == 1) {
+                    System.out.println(i);
+
+                }
+            }
+        }
+    }
 }
