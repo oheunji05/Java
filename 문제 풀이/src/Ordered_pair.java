@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class Multiples {
+public class Ordered_pair {
+
     //정수를 입력받아 다음과 같이 순서쌍을 출력하는 프로그램을 작성하시오.
     //
     //* 주의
